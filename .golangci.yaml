@@ -1,19 +1,20 @@
 version: "2"
 formatters:
   enable:
-    - gci
-    - gofmt
-    - gofumpt
-    - goimports
     - golines
+    - gofumpt
     - swaggo
   settings:
     gofumpt:
+      module-path: your/module-path
       extra-rules: true
 linters:
   default: standard
   enable:
     - revive
+    - copyloopvar
+    - unconvert
+    - nilnesserr
   settings:
     revive:
       severity: warning
