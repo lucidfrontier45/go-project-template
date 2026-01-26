@@ -16,7 +16,6 @@ linters:
     - unconvert
     - nilnesserr
     - intrange
-    - ireturn
   settings:
     revive:
       severity: warning
